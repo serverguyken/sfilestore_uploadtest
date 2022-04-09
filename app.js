@@ -1,5 +1,5 @@
 // Variables and DOM
-const api_url = 'https://sfs.filestore.com/api/v1' //'http://10.0.0.41:3001/api/v1';
+const api_url = 'https://sfs.spacre.com/api/v1' //'http://10.0.0.41:3001/api/v1';
 let  upload_url = `${api_url}/upload`;
 const uploadType = document.getElementById('upload_type');
 const uploadBtn = document.getElementById('upload_button');
