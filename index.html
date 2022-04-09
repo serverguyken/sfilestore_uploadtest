@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>sFileStore</title>
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <div class="header">
+                <h1>sFileStore</h1>
+            </div>
+            <div class="file_types">
+                <h2>File Types</h2>
+                <ul>
+                    <li>Images (jpg, jpeg, png, gif)</li>
+                    <li>Videos (mp4, avi, mpg, mpeg, m4v, mkv, webm, ogv, vob, wmv, 3gp, flv, m4p)</li>
+                    <li>Audio not yet supported</li>
+                </ul>
+            </div>
+            <div class="upload_type">
+                <h2>Upload Type</h2>
+                <input type="text" id="upload_type">
+            </div>
+            <div class="file_upload_container">
+                <div class="file_input_ele">
+                    <input type="file"  id="file_input">
+                </div>
+                <div class="upload_button">
+                    <button id="upload_button">Upload</button>
+                </div>
+            </div>
+            <div class="file_error">
+                <span id="file_error"></span>
+            </div>
+            <div class="file_preview_container">
+                <img src="" alt="" class="file_preview_img" id="file_preview_img">
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
