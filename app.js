@@ -1,12 +1,12 @@
 // Variables and DOM
-const api_url =  'https://sfs.spacre.com/api/v1' //'http://10.0.0.41:3001/api/v1';
+const api_url = 'https://sfs.filestore.com' //'http://10.0.0.41:3001/api/v1';
 let  upload_url = `${api_url}/upload`;
 const uploadType = document.getElementById('upload_type');
 const uploadBtn = document.getElementById('upload_button');
 const fileInput = document.getElementById('file_input');
 const fileError = document.getElementById('file_error');
 const file_preview_img = document.getElementById('file_preview_img');
-
+const file_preview_video = document.getElementById('file_preview_video');
 // Functions and Event Listeners
 const generateFileName = () => {
     let name = Math.random().toString(36).substring(7);
@@ -51,6 +51,7 @@ const handleUpload = (formData, type) => {
             }
             else {
                 file_preview_img.src = res.url;
+                file_preview_video.src = res.url;
             }
         })
         .catch(err => console.log(err));

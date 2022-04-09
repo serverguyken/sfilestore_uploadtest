@@ -90,6 +90,10 @@ body {
     width: 100%;
     height: auto;
 }
+.file_preview_container video {
+    width: 100%;
+    height: auto;
+}
 
 .file_error {
     color: var(--color-error);
