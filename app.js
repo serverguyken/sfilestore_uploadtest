@@ -5,6 +5,7 @@ const uploadType = document.getElementById('upload_type');
 const uploadBtn = document.getElementById('upload_button');
 const fileInput = document.getElementById('file_input');
 const fileError = document.getElementById('file_error');
+const file_url = document.getElementById('file_url');
 const file_preview_img = document.getElementById('file_preview_img');
 const file_preview_video = document.getElementById('file_preview_video');
 // Functions and Event Listeners
@@ -50,6 +51,9 @@ const handleUpload = (formData, type) => {
                 fileError.innerHTML = res.message;
             }
             else {
+                const span = document.createElement('span');
+                span.innerHTML = `URL: <a href=${res.url} id="file_url">${res.url}</a>`;
+                file_url.appendChild(span);
                 file_preview_img.src = res.url;
                 file_preview_video.src = res.url;
             }
