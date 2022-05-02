@@ -28,16 +28,16 @@ const UploadFile = (e) => {
         return;
     }
     if (uType.toLowerCase() === 'profile') {
-        formData.append('profiles', file);
+        formData.append('profile', file);
         handleUpload(formData, 'profile');
     }
     else if (uType.toLowerCase() === 'image') {
         formData.append('images', file);
-        handleUpload(formData, 'images');
+        handleUpload(formData, 'image');
     }
     else if (uType.toLowerCase() === 'video') {
         formData.append('videos', file);
-        handleUpload(formData, 'videos');
+        handleUpload(formData, 'video');
     } 
     else {
         fileError.innerHTML = 'UnSupported File Type';
